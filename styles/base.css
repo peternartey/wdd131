@@ -1,0 +1,114 @@
+body {
+font: 400 16px / 1.5 Montserrat, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+justify-content: space-between;
+  gap: 5px;
+  background: #0c0c0c;
+  padding:  2rem;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background: #0059b3;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.card-title {
+  font-size: 1.5rem;
+  color: #8274a8;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  border: 2px solid #ccc; /* 👈 This adds the border */
+  border-radius: 10px;     /* Optional: rounded corners */
+  padding: 2rem 1rem 1rem 1rem; /* Top padding extra for the h2 */
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba #f9f9f9; /* Optional: soft shadow */
+}
+
+
+.overlap-heading {
+  position: absolute;
+  top: 0.5px;
+  left: 0;
+  width: 93%; /* 👈 stretches the h2 fully */
+  background-color: #003366;
+  padding: 0.75rem 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 2px 4px rgba#f9f9f9;
+  margin: 0;
+  text-align: center; /* optional: center the heading text */
+  color:gainsboro;
+}
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+ .about-content {
+  display: flex;
+  flex-direction: row-reverse; /* this puts image on the right */
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-content img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.about-content p {
+  flex: 1;
+  font-size: 1rem;
+    margin-top: 10%;
+}
