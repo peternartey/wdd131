@@ -105,7 +105,7 @@ figcaption {
 
 
 .active {
-    color: yellow;
+    color: #ffffff;
 }
 
 /* Larger Views -----------------*/
@@ -133,5 +133,5 @@ figcaption {
   }
 
   #lastModified {
-  color: #ffe600;
+  color: #f9f9f9;
 }
