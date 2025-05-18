@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@media (min-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Tablet view (min 500px) */
+@media (min-width: 500px) {
+  .Temple {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Desktop view (min 900px) */
+@media (min-width: 900px) {
+  .Temple {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  img {
+    width: 400px;
+    height: 200px;
+  }
+}
