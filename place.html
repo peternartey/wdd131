@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Explore Accra, the vibrant capital of Ghana, through this responsive webpage showcasing its weather, culture, landmarks, and more.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GHANA</title>
+  <title>Accra, Ghana</title>
+    <!-- ✅ Google Fonts Embed Example -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>GHANA</h1>
+    <h1>Accra, Ghana</h1>
   </header>
 
   <picture class="hero">
     <source srcset="images/hero-small.jpg" media="(max-width: 600px)">
-    <img src="images/hero-small.jpg" alt="Hero image of GHANA">
+    <img src="images/hero-small.jpg" alt="Hero image of Accra, Ghana">
   </picture>
 
   <main>
@@ -29,12 +33,12 @@
       <p>Temperature: <span id="temp">40</span>°F</p>
       <p>Wind Speed: <span id="speed">10</span> mph</p>
       <p>Wind Chill: <span id="chill">Loading...</span></p>
-      <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-svg">
+      <img src="images/weather.webp" alt="Weather Icon" class="weather-svg">
     </section>
   </main>
-
-  <footer>
-    <p>&copy; <span id="year"></span> ACCRA GHANA | Last Modified: <span id="modified"></span></p>
-  </footer>
+<footer>
+  <p>&copy; <span id="year"></span> ACCRA GHANA | Last Modified: <span id="modified"></span></p>
+  <p> Peter Kweku Nartey</p>
+</footer>
 </body>
 </html>
