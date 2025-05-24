@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHANA</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>GHANA</h1>
+  </header>
+
+  <picture class="hero">
+    <source srcset="images/hero-small.jpg" media="(max-width: 600px)">
+    <img src="images/hero-small.jpg" alt="Hero image of GHANA">
+  </picture>
+
+  <main>
+    <section class="info">
+      <h2>About</h2>
+      <p>Accra is the vibrant capital city of Ghana, located along the Gulf of Guinea on the Atlantic coast of West Africa. As the political, economic, and cultural hub of the country, Accra is known for its rich history, colorful markets, diverse architecture, and warm hospitality. The city blends modern buildings with colonial-era landmarks, such as the Independence Arch and Kwame Nkrumah Mausoleum. Accra is also famous for its lively arts and music scenes, sandy beaches, and delicious local cuisine. Whether you're exploring the bustling Makola Market or enjoying a sunset at Labadi Beach, Accra offers a unique and unforgettable experience.</p>
+
+    </section>
+
+    <section class="weather">
+      <h2>Weather <span class="weather-icon"></span></h2>
+      <p>Temperature: <span id="temp">40</span>°F</p>
+      <p>Wind Speed: <span id="speed">10</span> mph</p>
+      <p>Wind Chill: <span id="chill">Loading...</span></p>
+      <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-svg">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> ACCRA GHANA | Last Modified: <span id="modified"></span></p>
+  </footer>
+</body>
+</html>
