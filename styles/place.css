@@ -1,43 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 :root {
-  --main-color: #007bff;
-  --secondary-color: #f2f2f2;
+  --main-bg: #fff;
+  --accent-color: #004d00;
   --text-color: #333;
-  --font-family: 'Arial', sans-serif;
 }
 
 body {
-  font-family: var(--font-family);
-  color: var(--text-color);
-  background: var(--secondary-color);
-  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 2%;
   padding: 0;
+  background-color: var(--main-bg);
+  color: var(--text-color);
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
+header, footer {
+  background-color: var(--accent-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
-.weather-svg {
-  display: none;
+main {
+  padding: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-@media (min-width: 700px) {
-  .weather-svg {
-    display: none;
-  }
-
-  .weather-icon::after {
-    content: " ⛅";
-  }
+.weather h2::after {
+  content: " ⛅";
 }
 
-@media (max-width: 699px) {
-  .weather-icon::after {
+@media (min-width: 800px) {
+  .weather h2::after {
     content: "";
-  }
-
-  .weather-svg {
-    display: block;
+    background-image: url('images/hero-small.jpg');
+    background-size: contain;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
   }
 }

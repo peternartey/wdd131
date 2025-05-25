@@ -1,20 +1,23 @@
 function calculateWindChill(tempF, speedMph) {
-  return 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speedMph, 0.16)) + (0.4275 * tempF * Math.pow(speedMph, 0.16));
+  return (
+    35.74 +
+    0.6215 * tempF -
+    35.75 * Math.pow(speedMph, 0.16) +
+    0.4275 * tempF * Math.pow(speedMph, 0.16)
+  ).toFixed(2);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const yearSpan = document.getElementById("year");
-  const modifiedSpan = document.getElementById("modified");
-  const temp = parseFloat(document.getElementById("temp").textContent);
-  const speed = parseFloat(document.getElementById("speed").textContent);
-  const chillSpan = document.getElementById("chill");
+// Footer info
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 
-  yearSpan.textContent = new Date().getFullYear();
-  modifiedSpan.textContent = document.lastModified;
+// Windchill logic
+const temp = parseFloat(document.getElementById("temperature").textContent);
+const wind = parseFloat(document.getElementById("windSpeed").textContent);
+const output = document.getElementById("windChill");
 
-  if (temp <= 50 && speed > 3) {
-    chillSpan.textContent = `${Math.round(calculateWindChill(temp, speed))} °F`;
-  } else {
-    chillSpan.textContent = "N/A";
-  }
-});
+if (temp <= 50 && wind > 3) {
+  output.textContent = `${calculateWindChill(temp, wind)} °F`;
+} else {
+  output.textContent = "N/A";
+}
