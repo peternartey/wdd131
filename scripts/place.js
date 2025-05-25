@@ -8,8 +8,9 @@ function calculateWindChill(tempF, speedMph) {
 }
 
 // Footer info
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("modified").textContent = document.lastModified;
 
 // Windchill logic
 const temp = parseFloat(document.getElementById("temperature").textContent);
