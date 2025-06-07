@@ -1,0 +1,55 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FAFAFA; /* Background Color */
+  color: #333; /* Default text color */
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #2C3E50; /* Primary Color (Navy Blue) */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #1ABC9C; /* Accent Color (Light Teal) */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Optional button styles using Accent Color */
+button,
+a.button {
+  background-color: #1ABC9C; /* Accent Color */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+a.button:hover {
+  background-color: #16a085; /* Slightly darker teal for hover */
+}
+
+img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
