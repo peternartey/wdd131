@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temple Album</title>
+  <meta name="description" content="Filtered Temple Album" />
+  <meta name="author" content="Peter Kweku Nartey" />
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <nav>
+      <ul>
+        <li><button data-filter="all">Home</button></li>
+        <li><button data-filter="old">Old</button></li>
+        <li><button data-filter="new">New</button></li>
+        <li><button data-filter="large">Large</button></li>
+        <li><button data-filter="small">Small</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="filter-title">Home</h2>
+    <section id="temple-cards" class="card-container"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | 💐🥝 Peter Kweku Nartey 🥝💐 | Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
