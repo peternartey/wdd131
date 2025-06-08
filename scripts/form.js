@@ -1,10 +1,3 @@
-const rangevalue = document.getElementById("rangevalue");
-const range = document.getElementById("r");
+const lastModified = document.lastModified;
 
-// RANGE event listener
-range.addEventListener('change', displayRatingValue);
-range.addEventListener('input', displayRatingValue);
-
-function displayRatingValue() {
-    rangevalue.innerHTML = range.value;
-}
+document.getElementById("last-updated").textContent = `Last modified: ${lastModified}`;
