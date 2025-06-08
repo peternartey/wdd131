@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="From Practice">
+    <meta name="author" content="Peter Kweku Nartey">
+    <title>From Practice</title>
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script defer src="./scripts/form.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+    <main>
+      <form action="review.html" method="get">
+        <label for="product">Product Name</label>
+        <select name="product" id="product">
+          <option value="product1" selected disabled
+            >Choose a Product...</option
+          >
+          <option value="product2">Product 2</option>
+          <option value="product3">Product 3</option>
+          <option value="product4">Product 4</option>
+          <option value="product5">Product 5</option>
+        </select>
+        <label for="rating">Overall Rating</label>
+        <div class="rating">
+          <div>
+            <label for="rating">⭐⭐</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="rating">⭐⭐⭐</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="rating">⭐⭐⭐⭐</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="rating">⭐⭐⭐⭐⭐</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="rating">⭐⭐⭐⭐⭐⭐</label>
+            <input type="radio" />
+          </div>
+        </div>
+
+        <label for="date">Date of instalation</label>
+        <input type="date" />
+        <label for="useful"
+          >Which features do you find useful in the
+          product?</label
+        >
+        <label >Check all that apply</label>
+        <label
+          class="first"><input type="checkbox" />Durability
+        </label>
+        <label 
+          ><input type="checkbox" />Performance
+        </label>
+        <label 
+          ><input type="checkbox" />Quaity
+        </label>
+        <label
+          class ="last"><input type="checkbox" />Design
+        </label>
+        <label
+          >Written Review <span>(Optional)</span></label
+        >
+        <textarea name="review" id="review"></textarea>
+        <label for="name"
+          >Your Name <span>(Optional)</span></label
+        >
+        <input type="text" />
+
+        <input type="submit" class="button">Post Review</input>
+      </form>
+    </main>
+    <footer>
+      <p>&copy;2025 | 💐🥝 Peter Kweku Nartey 🥝💐 | Ghana</p>
+      <p> <span id="last-updated"></span></p>
+    </footer>
+
+    
+  </body>
+</html>
